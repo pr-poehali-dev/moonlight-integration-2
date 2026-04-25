@@ -7,6 +7,39 @@ import { MagneticButton } from "@/components/ui/magnetic-button"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { GradientButton } from "@/components/ui-library/buttons/gradient-button"
 
+const ChineseCornerDecor = () => (
+  <>
+    <div className="absolute top-0 left-0 w-24 h-24 pointer-events-none opacity-20">
+      <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4 L4 40 M4 4 L40 4" stroke="hsl(45,85%,55%)" strokeWidth="2"/>
+        <path d="M12 12 L12 32 M12 12 L32 12" stroke="hsl(45,85%,55%)" strokeWidth="1"/>
+        <circle cx="4" cy="4" r="3" fill="hsl(45,85%,55%)"/>
+      </svg>
+    </div>
+    <div className="absolute top-0 right-0 w-24 h-24 pointer-events-none opacity-20 scale-x-[-1]">
+      <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4 L4 40 M4 4 L40 4" stroke="hsl(45,85%,55%)" strokeWidth="2"/>
+        <path d="M12 12 L12 32 M12 12 L32 12" stroke="hsl(45,85%,55%)" strokeWidth="1"/>
+        <circle cx="4" cy="4" r="3" fill="hsl(45,85%,55%)"/>
+      </svg>
+    </div>
+    <div className="absolute bottom-0 left-0 w-24 h-24 pointer-events-none opacity-20 scale-y-[-1]">
+      <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4 L4 40 M4 4 L40 4" stroke="hsl(45,85%,55%)" strokeWidth="2"/>
+        <path d="M12 12 L12 32 M12 12 L32 12" stroke="hsl(45,85%,55%)" strokeWidth="1"/>
+        <circle cx="4" cy="4" r="3" fill="hsl(45,85%,55%)"/>
+      </svg>
+    </div>
+    <div className="absolute bottom-0 right-0 w-24 h-24 pointer-events-none opacity-20 rotate-180">
+      <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4 L4 40 M4 4 L40 4" stroke="hsl(45,85%,55%)" strokeWidth="2"/>
+        <path d="M12 12 L12 32 M12 12 L32 12" stroke="hsl(45,85%,55%)" strokeWidth="1"/>
+        <circle cx="4" cy="4" r="3" fill="hsl(45,85%,55%)"/>
+      </svg>
+    </div>
+  </>
+)
+
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -30,8 +63,9 @@ const itemVariants = {
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
-      <AnimatedBackground variant="gradient" color="rgba(220, 38, 38, 0.08)" secondaryColor="rgba(75, 85, 99, 0.08)" />
+    <section id="home" className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden chinese-pattern-bg">
+      <AnimatedBackground variant="gradient" color="rgba(176, 40, 40, 0.08)" secondaryColor="rgba(180, 140, 40, 0.06)" />
+      <ChineseCornerDecor />
 
       <div className="container px-6 md:px-8">
         <div className="grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -43,8 +77,9 @@ export function HeroSection() {
               animate="visible"
             >
               <motion.div className="space-y-4" variants={itemVariants}>
+                <span className="section-badge">🏮 Российский рынок для китайского бизнеса</span>
                 {/* Modern Hero Header with Gradient */}
-                <h1 className="text-4xl font-heading font-bold tracking-tighter sm:text-5xl xl:text-7xl/none">
+                <h1 className="text-4xl font-heading font-bold tracking-tighter sm:text-5xl xl:text-7xl/none mt-4">
                   <span className="gradient-text">Выход на рынок России</span>
                   <br />
                   <span className="text-foreground">для китайского бизнеса</span>

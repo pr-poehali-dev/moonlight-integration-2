@@ -37,6 +37,7 @@ export function TestimonialsSection() {
       <div className="container px-4 md:px-6">
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <span className="section-badge">🌟 Отзывы клиентов</span>
             <div className="space-y-2">
               <AnimatedText
                 text="Китайские компании о работе с нами"

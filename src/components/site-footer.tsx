@@ -4,6 +4,7 @@ import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 export function SiteFooter() {
   return (
     <footer className="border-t bg-background/80 backdrop-blur-lg">
+      <div className="gold-line w-full mb-0" />
       <div className="container flex flex-col gap-10 py-16">
         <div className="flex flex-col gap-10 md:flex-row">
           <div className="flex flex-1 flex-col gap-4">

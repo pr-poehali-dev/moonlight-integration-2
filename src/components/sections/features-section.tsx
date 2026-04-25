@@ -61,6 +61,7 @@ export function FeaturesSection() {
       <div className="container px-6 md:px-8">
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
+            <span className="section-badge">⚡ Наши услуги</span>
             <div className="space-y-4">
               <AnimatedText
                 text="Всё для успешного входа на рынок России"
