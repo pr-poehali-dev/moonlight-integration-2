@@ -9,37 +9,48 @@ export function SiteFooter() {
           <div className="flex flex-1 flex-col gap-4">
             <a href="/" className="flex items-center gap-2">
               <Icons.logo className="h-6 w-6" />
-              <span className="font-heading text-xl tracking-tight">PixelForge</span>
+              <span className="font-heading text-xl tracking-tight">СиноМаркет</span>
             </a>
             <p className="text-muted-foreground max-w-sm opacity-70">
-              Современная библиотека UI-компонентов на базе shadcn/ui и Aceternity UI для веб-разработчиков и дизайнеров
-              в сфере AI-софта.
+              Помогаем китайским компаниям выйти на рынок России: сайты на русском языке, Яндекс.Директ, ведение соцсетей.
             </p>
             <div className="flex gap-4">
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
+              <a href="https://vk.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
                 <Icons.twitter className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">ВКонтакте</span>
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
-                <Icons.gitHub className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a href="https://discord.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
+              <a href="https://t.me" target="_blank" rel="noreferrer" className="glassmorphic-icon">
                 <Icons.discord className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">Discord</span>
+                <span className="sr-only">Telegram</span>
               </a>
             </div>
           </div>
           <div className="grid flex-1 grid-cols-2 gap-10 sm:grid-cols-3">
             <div className="flex flex-col gap-2">
-              <h3 className="text-sm font-medium tracking-tight">Продукт</h3>
+              <h3 className="text-sm font-medium tracking-tight">Услуги</h3>
               <ul className="flex flex-col gap-2">
                 <li>
                   <a
                     href="#features"
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
                   >
-                    Функции
+                    Создание сайтов
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#features"
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+                  >
+                    Яндекс.Директ
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#features"
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+                  >
+                    Ведение соцсетей
                   </a>
                 </li>
                 <li>
@@ -48,22 +59,6 @@ export function SiteFooter() {
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
                   >
                     Цены
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#components"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Компоненты
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#changelog"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Изменения
                   </a>
                 </li>
               </ul>
@@ -81,6 +76,14 @@ export function SiteFooter() {
                 </li>
                 <li>
                   <a
+                    href="#testimonials"
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+                  >
+                    Отзывы
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="#blog"
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
                   >
@@ -89,25 +92,33 @@ export function SiteFooter() {
                 </li>
                 <li>
                   <a
-                    href="#careers"
+                    href="#faq"
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
                   >
-                    Вакансии
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Контакты
+                    FAQ
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-sm font-medium tracking-tight">Правовая информация</h3>
+              <h3 className="text-sm font-medium tracking-tight">Контакты</h3>
               <ul className="flex flex-col gap-2">
+                <li>
+                  <a
+                    href="https://t.me"
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+                  >
+                    Telegram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://vk.com"
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
+                  >
+                    ВКонтакте
+                  </a>
+                </li>
                 <li>
                   <a
                     href="#privacy"
@@ -124,29 +135,13 @@ export function SiteFooter() {
                     Условия
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="#cookies"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Cookies
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#licenses"
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
-                  >
-                    Лицензии
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-muted-foreground opacity-70">
-            &copy; {new Date().getFullYear()} PixelForge. Все права защищены.
+            &copy; {new Date().getFullYear()} СиноМаркет. Все права защищены.
           </p>
           <div className="flex gap-4">
             <a

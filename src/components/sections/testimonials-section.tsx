@@ -8,25 +8,25 @@ import { AnimatedBackground } from "@/components/ui/animated-background"
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Алексей Иванов",
-      role: "Frontend-разработчик",
+      name: "Чэнь Вэй",
+      role: "Экспорт оборудования, Шанхай",
       content:
-        "Эта библиотека сэкономила мне кучу времени на разработку. Компоненты красиво оформлены и легко настраиваются.",
-      avatar: "АИ",
+        "Благодаря новому сайту и Яндекс.Директ мы получили первых российских клиентов уже через 3 недели после запуска. Очень профессиональная команда!",
+      avatar: "ЧВ",
     },
     {
-      name: "Мария Петрова",
-      role: "UI/UX-дизайнер",
+      name: "Лю Хуэй",
+      role: "Производство текстиля, Гуанчжоу",
       content:
-        "Как дизайнер, я ценю внимание к деталям в этих компонентах. Они не только функциональны, но и эстетичны.",
-      avatar: "МП",
+        "Раньше мы не понимали, как работает российский интернет. Теперь у нас есть сайт, соцсети и постоянный поток заявок из России.",
+      avatar: "ЛХ",
     },
     {
-      name: "Дмитрий Козлов",
-      role: "Продакт-менеджер",
+      name: "Ван Цян",
+      role: "Торговля стройматериалами, Пекин",
       content:
-        "Продуктивность нашей команды значительно выросла с этой библиотекой. Документация отличная, компоненты надежные.",
-      avatar: "ДК",
+        "Отличная работа с рекламой — стоимость заявки снизилась в 2 раза за первый месяц. Рекомендую всем, кто хочет выйти на рынок России.",
+      avatar: "ВЦ",
     },
   ]
 
@@ -39,13 +39,13 @@ export function TestimonialsSection() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <AnimatedText
-                text="Отзывы пользователей"
+                text="Китайские компании о работе с нами"
                 variant="heading"
                 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl"
                 animation="slide"
               />
               <AnimatedText
-                text="Узнайте, что говорят разработчики и дизайнеры, использующие нашу библиотеку."
+                text="Наши клиенты — китайские предприниматели, которые успешно вышли на российский рынок с нашей помощью."
                 variant="paragraph"
                 className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70"
                 animation="fade"

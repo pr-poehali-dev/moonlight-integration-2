@@ -10,8 +10,7 @@ import { useScrollPosition } from "@/hooks/use-scroll-position"
 
 const navItems = [
   { name: "Главная", href: "#home" },
-  { name: "Функции", href: "#features" },
-  { name: "Компоненты", href: "#components" },
+  { name: "Услуги", href: "#features" },
   { name: "Отзывы", href: "#testimonials" },
   { name: "Цены", href: "#pricing" },
   { name: "Блог", href: "#blog" },
@@ -40,7 +39,7 @@ export function SiteHeader() {
       <div className="container px-4 md:px-6 flex h-16 items-center justify-between">
         <a href="/" className="flex items-center space-x-2 z-10">
           <Icons.logo className="h-6 w-6" />
-          <span className="font-heading text-xl tracking-tight">PixelForge</span>
+          <span className="font-heading text-xl tracking-tight">СиноМаркет</span>
         </a>
 
         {/* Desktop Navigation - Hidden on mobile */}
@@ -68,12 +67,9 @@ export function SiteHeader() {
 
           {/* Desktop CTA Buttons - Hidden on mobile */}
           <div className="hidden md:flex items-center space-x-2">
-            <Button variant="ghost" size="sm" className="neumorphic-button" asChild>
-              <a href="#login">Войти</a>
-            </Button>
             <Button size="sm" className="neumorphic-button-primary" asChild>
-              <a href="#register">
-                Начать
+              <a href="#pricing">
+                Получить консультацию
                 <motion.div
                   className="ml-1"
                   animate={{ x: [0, 3, 0] }}
@@ -116,7 +112,7 @@ export function SiteHeader() {
               <div className="flex items-center justify-between p-4 border-b border-border">
                 <a href="/" className="flex items-center space-x-2" onClick={closeMobileMenu}>
                   <Icons.logo className="h-6 w-6" />
-                  <span className="font-heading text-lg">PixelForge</span>
+                  <span className="font-heading text-lg">СиноМаркет</span>
                 </a>
                 <button
                   onClick={closeMobileMenu}
@@ -149,15 +145,10 @@ export function SiteHeader() {
               </div>
 
               <div className="mt-auto p-4 border-t border-border">
-                <div className="grid grid-cols-2 gap-3">
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="#login" onClick={closeMobileMenu}>
-                      Войти
-                    </a>
-                  </Button>
+                <div className="grid grid-cols-1 gap-3">
                   <Button className="w-full neumorphic-button-primary" asChild>
-                    <a href="#register" onClick={closeMobileMenu}>
-                      Начать
+                    <a href="#pricing" onClick={closeMobileMenu}>
+                      Получить консультацию
                     </a>
                   </Button>
                 </div>
